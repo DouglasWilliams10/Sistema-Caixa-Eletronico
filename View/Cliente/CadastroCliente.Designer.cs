@@ -36,11 +36,11 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            maskedTextBox1 = new MaskedTextBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
+            ttbCpf = new MaskedTextBox();
+            ttbNome = new TextBox();
+            ttbSenha = new TextBox();
+            ttbConfirmarSenha = new TextBox();
+            ttbData = new MaskedTextBox();
             SuspendLayout();
             // 
             // button1
@@ -117,51 +117,53 @@
             label6.TabIndex = 7;
             label6.Text = "Data de Nascimento";
             // 
-            // maskedTextBox1
+            // ttbCpf
             // 
-            maskedTextBox1.Location = new Point(67, 87);
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(329, 23);
-            maskedTextBox1.TabIndex = 8;
+            ttbCpf.Location = new Point(67, 87);
+            ttbCpf.Mask = "   ,   ,   -";
+            ttbCpf.Name = "ttbCpf";
+            ttbCpf.Size = new Size(329, 23);
+            ttbCpf.TabIndex = 8;
             // 
-            // textBox1
+            // ttbNome
             // 
-            textBox1.Location = new Point(67, 43);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(329, 23);
-            textBox1.TabIndex = 9;
+            ttbNome.Location = new Point(67, 43);
+            ttbNome.Name = "ttbNome";
+            ttbNome.Size = new Size(329, 23);
+            ttbNome.TabIndex = 9;
             // 
-            // textBox2
+            // ttbSenha
             // 
-            textBox2.Location = new Point(67, 131);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(329, 23);
-            textBox2.TabIndex = 10;
+            ttbSenha.Location = new Point(67, 131);
+            ttbSenha.Name = "ttbSenha";
+            ttbSenha.Size = new Size(329, 23);
+            ttbSenha.TabIndex = 10;
             // 
-            // textBox3
+            // ttbConfirmarSenha
             // 
-            textBox3.Location = new Point(67, 179);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(329, 23);
-            textBox3.TabIndex = 11;
+            ttbConfirmarSenha.Location = new Point(67, 179);
+            ttbConfirmarSenha.Name = "ttbConfirmarSenha";
+            ttbConfirmarSenha.Size = new Size(329, 23);
+            ttbConfirmarSenha.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // ttbData
             // 
-            dateTimePicker1.Location = new Point(67, 223);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(329, 23);
-            dateTimePicker1.TabIndex = 12;
+            ttbData.Location = new Point(67, 223);
+            ttbData.Mask = "  /  /  ";
+            ttbData.Name = "ttbData";
+            ttbData.Size = new Size(329, 23);
+            ttbData.TabIndex = 13;
             // 
             // CadastroCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(519, 303);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(maskedTextBox1);
+            Controls.Add(ttbData);
+            Controls.Add(ttbConfirmarSenha);
+            Controls.Add(ttbSenha);
+            Controls.Add(ttbNome);
+            Controls.Add(ttbCpf);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -186,10 +188,10 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private MaskedTextBox maskedTextBox1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private DateTimePicker dateTimePicker1;
+        private MaskedTextBox ttbCpf;
+        private TextBox ttbNome;
+        private TextBox ttbSenha;
+        private TextBox ttbConfirmarSenha;
+        private MaskedTextBox ttbData;
     }
 }
