@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroCliente));
             button1 = new Button();
             button2 = new Button();
             label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
@@ -41,124 +41,97 @@
             ttbSenha = new TextBox();
             ttbConfirmarSenha = new TextBox();
             ttbData = new MaskedTextBox();
+            label7 = new Label();
+            textBox1 = new TextBox();
+            label8 = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(86, 268);
+            resources.ApplyResources(button1, "button1");
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "Cadastrar";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(290, 268);
+            resources.ApplyResources(button2, "button2");
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "Cancelar";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(0, 0);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new Size(149, 15);
-            label1.TabIndex = 2;
-            label1.Text = "Preencha todos os campos";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(65, 28);
-            label2.Name = "label2";
-            label2.Size = new Size(40, 15);
-            label2.TabIndex = 3;
-            label2.Text = "Nome";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(64, 72);
+            resources.ApplyResources(label3, "label3");
             label3.Name = "label3";
-            label3.Size = new Size(28, 15);
-            label3.TabIndex = 4;
-            label3.Text = "CPF";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(66, 117);
+            resources.ApplyResources(label4, "label4");
             label4.Name = "label4";
-            label4.Size = new Size(39, 15);
-            label4.TabIndex = 5;
-            label4.Text = "Senha";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(65, 164);
+            resources.ApplyResources(label5, "label5");
             label5.Name = "label5";
-            label5.Size = new Size(96, 15);
-            label5.TabIndex = 6;
-            label5.Text = "Confirmar Senha";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(66, 209);
+            resources.ApplyResources(label6, "label6");
             label6.Name = "label6";
-            label6.Size = new Size(114, 15);
-            label6.TabIndex = 7;
-            label6.Text = "Data de Nascimento";
             // 
             // ttbCpf
             // 
-            ttbCpf.Location = new Point(67, 87);
-            ttbCpf.Mask = "   ,   ,   -";
+            resources.ApplyResources(ttbCpf, "ttbCpf");
             ttbCpf.Name = "ttbCpf";
-            ttbCpf.Size = new Size(329, 23);
-            ttbCpf.TabIndex = 8;
             // 
             // ttbNome
             // 
-            ttbNome.Location = new Point(67, 43);
+            resources.ApplyResources(ttbNome, "ttbNome");
             ttbNome.Name = "ttbNome";
-            ttbNome.Size = new Size(329, 23);
-            ttbNome.TabIndex = 9;
             // 
             // ttbSenha
             // 
-            ttbSenha.Location = new Point(67, 131);
+            resources.ApplyResources(ttbSenha, "ttbSenha");
             ttbSenha.Name = "ttbSenha";
-            ttbSenha.Size = new Size(329, 23);
-            ttbSenha.TabIndex = 10;
+            ttbSenha.TextChanged += ttbSenha_TextChanged;
             // 
             // ttbConfirmarSenha
             // 
-            ttbConfirmarSenha.Location = new Point(67, 179);
+            resources.ApplyResources(ttbConfirmarSenha, "ttbConfirmarSenha");
             ttbConfirmarSenha.Name = "ttbConfirmarSenha";
-            ttbConfirmarSenha.Size = new Size(329, 23);
-            ttbConfirmarSenha.TabIndex = 11;
             // 
             // ttbData
             // 
-            ttbData.Location = new Point(67, 223);
-            ttbData.Mask = "  /  /  ";
+            resources.ApplyResources(ttbData, "ttbData");
             ttbData.Name = "ttbData";
-            ttbData.Size = new Size(329, 23);
-            ttbData.TabIndex = 13;
+            // 
+            // label7
+            // 
+            resources.ApplyResources(label7, "label7");
+            label7.Name = "label7";
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(textBox1, "textBox1");
+            textBox1.Name = "textBox1";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(label8, "label8");
+            label8.Name = "label8";
             // 
             // CadastroCliente
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(519, 303);
+            Controls.Add(textBox1);
+            Controls.Add(label7);
             Controls.Add(ttbData);
             Controls.Add(ttbConfirmarSenha);
             Controls.Add(ttbSenha);
@@ -168,12 +141,11 @@
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(label8);
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "CadastroCliente";
-            Text = "Cadastro de Cliente";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -183,7 +155,6 @@
         private Button button1;
         private Button button2;
         private Label label1;
-        private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
@@ -193,5 +164,8 @@
         private TextBox ttbSenha;
         private TextBox ttbConfirmarSenha;
         private MaskedTextBox ttbData;
+        private Label label7;
+        private TextBox textBox1;
+        private Label label8;
     }
 }

@@ -80,7 +80,7 @@
             // maskedTextBox1
             // 
             maskedTextBox1.Location = new Point(176, 124);
-            maskedTextBox1.Mask = "   ,   ,   -   ";
+            maskedTextBox1.Mask = "000\\.000\\-00";
             maskedTextBox1.Name = "maskedTextBox1";
             maskedTextBox1.Size = new Size(100, 23);
             maskedTextBox1.TabIndex = 4;
