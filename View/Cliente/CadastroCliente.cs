@@ -12,7 +12,7 @@ namespace Sistema_Caixa_Eletronico.View.Cadastro
 {
     public partial class CadastroCliente : Form
     {
-        
+
 
         public CadastroCliente()
         {
@@ -82,7 +82,9 @@ namespace Sistema_Caixa_Eletronico.View.Cadastro
 
         }
 
+        private void ttbSenha_TextChanged(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }
